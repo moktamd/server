@@ -63,7 +63,7 @@ class BeforeZipCreatedListenerTest extends TestCase {
 			'partial archive disabled, no filtering, 1 blocked 1 non-blocked file => should fail event' => [
 				'folderPath' => $rootFromFolder,
 				'rootDownloadable' => true,
-				'files' => ["blocked.txt" => false, "allowed.txt" => true],
+				'files' => ['blocked.txt' => false, 'allowed.txt' => true],
 				'filesFilter' => [],
 				'allowPartialArchive' => false,
 				'expectedSuccess' => false,

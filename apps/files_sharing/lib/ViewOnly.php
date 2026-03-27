@@ -19,7 +19,7 @@ use OCP\Files\NotFoundException;
 class ViewOnly {
 
 	public function __construct(
-		private Folder $userFolder,
+		private ?Folder $userFolder,
 	) {
 	}
 

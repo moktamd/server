@@ -18,7 +18,6 @@ use OCP\Files\Node as NcNode;
 use OCP\IConfig;
 use OCP\IDateTimeZone;
 use OCP\IL10N;
-use OCP\L10N\IFactory;
 use Psr\Log\LoggerInterface;
 use Sabre\DAV\Server;
 use Sabre\DAV\ServerPlugin;

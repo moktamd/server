@@ -46,7 +46,7 @@ class BeforeZipCreatedEvent extends Event {
 	public function __construct(
 		string|Folder $directory,
 		private array $files,
-		public ?bool $allowPartialArchive = true,
+		public ?bool $allowPartialArchive = false,
 	) {
 		parent::__construct();
 		if ($directory instanceof Folder) {
@@ -119,8 +119,8 @@ class BeforeZipCreatedEvent extends Event {
 
 	/**
 	 * @param callable(Node): array{0: bool, 1: ?string} $filter filter that
-	 * receives a Node and returns an array with a bool telling if the file is
-	 * to be included in the archive and an optional reason string.
+	 *                                                           receives a Node and returns an array with a bool telling if the file is
+	 *                                                           to be included in the archive and an optional reason string.
 	 *
 	 * @return void
 	 */
